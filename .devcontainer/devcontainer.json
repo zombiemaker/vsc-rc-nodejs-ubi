@@ -24,8 +24,12 @@
 	"extensions": [],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// TODO: Change the source port, if necessary, to avoid port collision if another process is using the port
-	"appPort": [ "11300:8080" ]
+	
+	// appPort
+	// If you use a single port format (e.g., "8080"), this configures Docker to publish the container port you specified and maps a random port of the host machine to the container port
+	// If you use a two port format (e.g., "12000:8080"), this configures Docker to publish the container port (specified by the second number) and maps the host machine port (specified by the first number) to the container portt
+	// See https://code.visualstudio.com/docs/remote/containers#_always-forwarding-a-port for more details
+	"appPort": [ "8080" ]
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "java -version",
