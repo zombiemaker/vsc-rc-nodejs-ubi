@@ -18,10 +18,12 @@ If you are running Visual Studio on Microsoft Windows, you will need the followi
 1. Clone the forked repo to your local repo within your WSL2 environment
 1. Start an integrated terminal within Visual Studio Code
 1. Check to make sure that all of the project contents including the containerfs folder is own by your username and group (and not owned by root:root)
-1. Start the development container (
+1. Start the development container
    1. Select the lower-left corner of the Visual Studio Code window
+
    ![VSC Lower Left Corner](docs/images/vsc-lower-left.png)
    1. Select from the list "Remote-Container: Reopen in container"
+   
    ![VSC Reopen In Container](docs/images/vsc-reopen-in-container.png)
 1. From the host machine WSL2 terminal, execute "docker ps" to view the container and the TCP/UDP port used to map to the container port
 
