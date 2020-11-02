@@ -1,0 +1,12 @@
+# BE SURE TO AVOID COMMITTING YOUR SECURITY CREDENTIALS
+**/.*
+**/.*/
+**/~*
+**/*~
+!.gitignore
+!.gitattributes
+!.editorconfig
+!.devcontainer
+!.mybashrc
+tmp/
+go/
